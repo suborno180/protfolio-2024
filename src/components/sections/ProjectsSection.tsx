@@ -9,7 +9,7 @@ const ProjectsSection = ({ isReflect }: { isReflect: boolean }) => {
     return (
         <div className='mb-20 p-8'>
             <div className="container overflow-hidden mx-auto">
-                <div className="w-full h-full  min-h-[90vh] grid lg:grid-cols-2">
+                <div className="w-full h-full  min-h-[900px] md:max-h-[900px] grid lg:grid-cols-2">
                     <div className={`w-full h-full  grid place-content-center lg:p-20 ${isReflect && 'lg:order-1'}`}>
                         <div className=''>
                             <TextContent />

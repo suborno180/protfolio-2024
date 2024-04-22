@@ -16,7 +16,7 @@ const MySkills_1 = () => {
       transition={{ duration: 1 }}
     >
       <div className="container mx-auto">
-        <div className="w-full min-h-screen md:h-auto grid xl:grid-cols-2 p-6">
+        <div className="w-full md:min-h-[900px] md:h-auto grid xl:grid-cols-2 p-6">
           <div className="w-full min-h-[850px] md:max-h-[600px] md:h-auto grid md:grid-cols-2 gap-8">
             <div className="flex flex-col justify-start">
               <div className="flex flex-col gap-8">
