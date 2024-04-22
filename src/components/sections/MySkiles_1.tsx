@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from 'react';
 import TextContent from '../TextContent';
 import { motion } from 'framer-motion';
