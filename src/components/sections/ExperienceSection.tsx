@@ -19,9 +19,10 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ title, logos }) =
       <div className="relative flex flex-col items-center overflow-hidden py-20 md:py-40">
         <div className="container relative z-[1] m-auto px-6 md:px-12">
           <div className="m-auto text-center md:w-8/12 lg:w-6/12">
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+            <motion.h2   
+            className="text-2xl font-bold text-green-600  md:text-4xl">
               {title}
-            </h2>
+            </motion.h2>
           </div>
           <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">
             <div className="flex flex-wrap justify-center gap-6">

@@ -14,9 +14,9 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-gray-900 font-bold text-4xl md:text-6xl lg:text-5xl xl:text-6xl dark:text-white"
+              className="text-gray-900 font-bold text-4xl md:text-6xl lg:text-5xl xl:text-[6rem] dark:text-white"
             >
-              Build in your way but with our experts <span className="text-primary dark:text-primaryLight">Support.</span>
+              Hello, {`I'm`} <br /> <span className="text-green-600 ">Suborno.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 50 }}
@@ -36,14 +36,14 @@ const HeroSection = () => {
               >
                 <div className="relative flex items-center px-2 p-1 rounded-full bg-white dark:bg-gray-900 border dark:border-gray-700 border-primary/10 shadow-md md:p-2 lg:pr-3">
                   <div className="pl-6 py-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-auto fill-blue-900/60 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-auto fill-green-900/60 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                     </svg>
                   </div>
                   <input placeholder="Your mail address" className="w-full p-4 rounded-full placeholder-gray-600 dark:placeholder-white bg-transparent outline-none" autoComplete='email' type="email" />
                   <div className="md:pr-1.5 lg:pr-0">
-                    <button type="button" title="Start buying" className="relative h-12 w-20 sm:w-auto ml-auto sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
+                    <button type="button" title="Start buying" className="relative h-12 w-20 sm:w-auto ml-auto sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-green-600 dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
                       <span className="relative hidden w-max text-white dark:text-gray-900 font-semibold md:block">
                         Get Started
                       </span>
