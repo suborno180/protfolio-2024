@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -29,7 +30,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ title, logos }) =
               {logos.map((logo, index) => (
                 <motion.div
                   key={index}
-                  className="group rounded-xl border border-gray-200 dark:border-gray-600 bg-white bg-opacity-5 py-2 px-4 hover:bg-opacity-10"
+                  className="group rounded-xl border border-gray-600 bg-white bg-opacity-5 py-2 px-4 hover:bg-opacity-10"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >

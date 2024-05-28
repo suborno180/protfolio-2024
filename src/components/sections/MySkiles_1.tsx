@@ -1,12 +1,12 @@
 "use client";
-import React from 'react';
-import TextContent from '../TextContent';
-import { motion } from 'framer-motion';
-import { BsTags } from 'react-icons/bs';
-import { FiPenTool } from 'react-icons/fi';
-import FetcherCard from '../FetcherCard';
-import { LuBoxes } from 'react-icons/lu';
-import { GoStack } from 'react-icons/go';
+import React from "react";
+import TextContent from "../TextContent";
+import { motion } from "framer-motion";
+import { BsTags } from "react-icons/bs";
+import { FiPenTool } from "react-icons/fi";
+import FetcherCard from "../FetcherCard";
+import { LuBoxes } from "react-icons/lu";
+import { GoStack } from "react-icons/go";
 
 const MySkills_1 = () => {
   return (
@@ -80,18 +80,21 @@ const MySkills_1 = () => {
             </div>
           </div>
           <div className="w-full min-h-full py-14 md:py-0 bg-blue- md:p-36">
-            <div
-              className="w-full h-full grid place-content-center"
-            >
+            <div className="w-full h-full grid place-content-center">
               <TextContent />
               <div className="my-10">
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="btn bg-gradient-to-tr from-yellow-400 to-yellow-600 text-black px-10 py-4"
+                <a
+                  download="CV of Suborno the developer"
+                  href="/docs/Black Gradient Creative Web Designer Resume of suborno.pdf"
                 >
-                  Download CV
-                </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="btn bg-gradient-to-tr from-yellow-400 to-yellow-600 text-black px-10 py-4"
+                  >
+                    Download CV
+                  </motion.button>
+                </a>
               </div>
             </div>
           </div>
@@ -99,6 +102,6 @@ const MySkills_1 = () => {
       </div>
     </motion.div>
   );
-}
+};
 
 export default MySkills_1;

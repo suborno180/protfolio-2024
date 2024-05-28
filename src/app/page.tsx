@@ -48,6 +48,10 @@ export default function Home() {
       alt: "Redux",
     },
     {
+      src: "/experiences/1024px-Socket-io.svg.png",
+      alt: "Socket.io",
+    },
+    {
       src: "/experiences/framer-motion-logo.png",
       alt: "framer-motion",
     },
