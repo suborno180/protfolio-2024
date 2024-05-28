@@ -8,6 +8,27 @@ import FetcherCard from "../FetcherCard";
 import { LuBoxes } from "react-icons/lu";
 import { GoStack } from "react-icons/go";
 
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 const MySkills_1 = () => {
   return (
     <motion.div
