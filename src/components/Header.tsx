@@ -13,7 +13,7 @@ const Header = () => {
           hidden
           aria-hidden="true"
         />
-        <nav className="fixed z-20 w-full backdrop-blur navbar shadow-gray-600/5 peer-checked:navbar-active md:relative md:bg-transparent shadow-none">
+        <nav className="fixed z-50 w-full backdrop-blur navbar shadow-gray-600/5 peer-checked:navbar-active md:relative md:bg-transparent shadow-none">
           <div className="xl:container m-auto px-6 md:px-12">
             <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0  w-full">
               <div className="w-full flex justify-between lg:w-auto">
