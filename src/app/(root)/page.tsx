@@ -4,6 +4,7 @@ import MySkiles_1 from "@/components/sections/MySkiles_1";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import Header from "@/components/Header";
 import CountingSection from "@/components/sections/CountingSection";
+import Link from "next/link";
 
 export default function Home() {
   const allExperiences = [
@@ -100,6 +101,9 @@ export default function Home() {
         <MySkiles_1 />
         <ProjectsSection isReflect={false} />
         <ProjectsSection isReflect={true} />
+        <div className="w-full grid place-content-center -mt-10">
+          <Link href="/protfolio" className="btn btn-warning">See More</Link>
+        </div>
         <CountingSection />
       </main>
     </>
