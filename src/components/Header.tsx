@@ -17,8 +17,8 @@ const Header = () => {
           <div className="xl:container m-auto px-6 md:px-12">
             <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0  w-full">
               <div className="w-full flex justify-between lg:w-auto">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   aria-label="logo"
                   className="flex space-x-2 items-center"
                 >
@@ -29,7 +29,7 @@ const Header = () => {
                   <span className="text-base font-bold text-white">
                     SUBORNO
                   </span>
-                </a>
+                </Link>
                 <label
                   htmlFor="hbr"
                   className="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
@@ -48,12 +48,12 @@ const Header = () => {
                 <div className="text-gray-300 lg:pr-4">
                   <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/"
                         className="block md:px-4 transition hover:text-primaryLight"
                       >
                         <span>Home</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <Link
@@ -64,12 +64,12 @@ const Header = () => {
                       </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/about"
                         className="block md:px-4 transition hover:text-primaryLight"
                       >
-                        <span>Services</span>
-                      </a>
+                        <span>About</span>
+                      </Link>
                     </li>
                   </ul>
                 </div>

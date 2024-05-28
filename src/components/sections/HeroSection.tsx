@@ -38,8 +38,8 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1 }}
               >
-                <Link href={"/contact"} className="btn btn-warning mt-8">
-                  Contact me
+                <Link href={"/about"} className="btn btn-warning mt-8">
+                  About me
                 </Link>
               </motion.div>
               {/* <motion.form
@@ -95,7 +95,8 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 1 }}
             className="overflow-hidden w-full lg:w-7/12 lg:-mr-16"
           >
-            <img src="/project.svg" alt="Illustration of projects" />
+            {/* <img src="/project.svg" alt="Illustration of projects" /> */}
+            <img src="/my-photo.png" alt="Photo of suborno180" />
           </motion.div>
         </div>
       </div>

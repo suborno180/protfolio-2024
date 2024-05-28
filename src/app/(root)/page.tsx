@@ -91,7 +91,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <Header />
+       
         <HeroSection />
         <ExperienceSection
           title="My Experiences"

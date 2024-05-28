@@ -21,8 +21,6 @@ export default function RootLayout({
     <html lang="en" data-theme="dark">
       <body className={inter.className}>
         {children}
-        <Animated_Cursor/>
-        <Footer/>
       </body>
     </html>
   );
