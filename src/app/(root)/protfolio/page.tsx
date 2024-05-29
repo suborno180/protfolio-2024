@@ -162,7 +162,6 @@ const All_Projects:All_ProjectsType[] = [
         {All_Projects.map((item, index) => (
           <>
             <div key={index}>
-              {item.id}
               <ProjectsSection 
               image={item.image}
               url={item.url}
