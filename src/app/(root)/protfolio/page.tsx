@@ -42,41 +42,34 @@ const All_Projects:All_ProjectsType[] = [
     },
     {
         id: 5,
-        title: "Furniture eCommerce Shop",
-        description: "I have built a comprehensive Furniture eCommerce Shop using Next.js, Tailwind CSS, and Shadcn UI. This application provides a seamless shopping experience with a visually appealing and user-friendly interface for browsing and purchasing furniture.",
-        url: "https://devnex-shop-1.vercel.app/",
-        image: "/images/eCommerce-website-2.PNG"
-    },
-    {
-        id: 6,
         title: "Grocery Shop Clone",
         description: "I have cloned a Grocery Shop using Next.js, Tailwind CSS, and Shadcn UI. This application replicates the functionalities of a modern online grocery store, providing a smooth and intuitive user experience for browsing and purchasing groceries.",
         url: "https://devnex-shop-2.vercel.app/",
         image: "/images/eCommerce-website-2.PNG"
     },
     {
-        id: 7,
+        id: 6,
         title: "Beautiful eCommerce Shop",
         description: "I have designed a beautiful eCommerce shop website using Tailwind CSS, Next.js, Framer Motion, and Daisy UI. This application offers a visually stunning and smooth shopping experience with engaging animations and an intuitive interface.",
         url: "https://devnex-shop-3.vercel.app/",
         image: "/images/eCommerce-website-3.PNG"
     },
     {
-        id: 8,
+        id: 7,
         title: "Bd-Tickets: Bus, Train, and Plane Ticket Selling Website",
         description: "I have built a comprehensive ticket selling website named Bd-Tickets using Next.js and Tailwind CSS. This platform allows users to easily browse and purchase bus, train, and plane tickets with a user-friendly and responsive interface.",
-        url: "https://devnex-shop-3.vercel.app/",
+        url: "https://bdtickets.vercel.app/",
         image: "/images/bd-tickets.PNG"
     },
     {
-        id: 9,
+        id: 8,
         title: "Modern Dashboard",
         description: "I have built a modern-looking dashboard using Next.js, Tailwind CSS, and Daisy UI. This dashboard provides a clean, intuitive, and responsive interface, perfect for managing and visualizing data efficiently.",
         url: "https://productify-bd.vercel.app/dsb",
         image: "/images/Dashboard-design.PNG"
     },
     {
-        id: 10,
+        id: 9,
         title: "UI Library",
         description: "I have built a UI library using Next.js and Tailwind CSS. This library offers a collection of reusable, customizable components designed to streamline the development of modern web applications.",
         url: "https://suborno-dev-library.vercel.app/",
@@ -90,21 +83,21 @@ const All_Projects:All_ProjectsType[] = [
         image: "/images/Dashboard-design-2.PNG"
     },
     {
-        id: 12,
+        id: 11,
         title: "Product Management Dashboard-2",
         description: "I have built another product management dashboard using Next.js and Tailwind CSS. This dashboard features a sleek, user-friendly design that simplifies managing products and enhances productivity.",
         url: "https://productify360.vercel.app/",
         image: "/images/Dashboard-design-3.PNG"
     },
     {
-        id: 13,
+        id: 12,
         title: "Beautiful Animated Portfolio",
         description: "Crafted a stunning animated portfolio using Tailwind CSS, Framer Motion, and Next.js. This visually appealing website combines elegant design with smooth animations to showcase my projects and skills in an engaging manner.",
-        url: "https://car-rental-2023.vercel.app/",
+        url: "https://suborno180-2.vercel.app/",
         image: "/images/beautifull-protfolio.PNG"
     },
     {
-        id: 12,
+        id: 13,
         title: "Animated Car Rental Website",
         description: "Created a stunning animated car rental website using Next.js, Tailwind CSS, and Framer Motion. This visually appealing website offers seamless navigation, beautiful design, and engaging animations to enhance the user experience and facilitate easy car rentals.",
         url: "https://car-rental-2023.vercel.app/",
@@ -114,21 +107,21 @@ const All_Projects:All_ProjectsType[] = [
         id: 14,
         title: "Polytechnic Website",
         description: "Crafted an educational website for Bangladesh Polytechnic Institute using Next.js, Tailwind CSS, Framer Motion, and Next UI. This comprehensive platform offers a seamless user experience, intuitive navigation, and engaging animations to facilitate learning. With a modern design and responsive layout, it aims to provide students and educators with a dynamic online learning environment.",
-        url: "https://car-rental-2023.vercel.app/",
+        url: "https://bpi-edu.vercel.app/",
         image: "/images/bpi-website.PNG"
     },
     {
         id: 15,
-        title: "Polytechnic Website",
-        description: "Crafted an educational website for Bangladesh Polytechnic Institute using Next.js, Tailwind CSS, Framer Motion, and Next UI. This comprehensive platform offers a seamless user experience, intuitive navigation, and engaging animations to facilitate learning. With a modern design and responsive layout, it aims to provide students and educators with a dynamic online learning environment.",
-        url: "https://car-rental-2023.vercel.app/",
+        title: "Paralax Protfolio Website",
+        description: "Crafted a stunning parallax portfolio design using Next.js for seamless performance, Shadcn UI for sleek and modern user interface elements, and Framer Motion for captivating animations. This dynamic portfolio showcases your projects with depth and interactivity, providing visitors with an immersive browsing experience. Elevate your online presence with this visually engaging and technically impressive design.",
+        url: "https://suborno-protfolio.vercel.app/",
         image: "/images/paralax-protfolio-dsign.PNG"
     },
     {
         id: 16,
-        title: "Polytechnic Website",
+        title: "Polytechnic Website with React",
         description: "Developed a comprehensive educational website for Bangladesh Polytechnic Institute using React.js, Bootstrap, and CSS3. This platform offers a user-friendly interface and responsive design, ensuring seamless navigation and accessibility across devices. Featuring interactive elements and engaging content, the website provides students and educators with valuable resources, course materials, and institutional information. Elevate the online learning experience with this dynamic and visually appealing educational platform.",
-        url: "https://car-rental-2023.vercel.app/",
+        url: "https://edu-bpi.vercel.app/",
         image: "/images/bpi-polytechnic-web-react.PNG"
     },
     {
