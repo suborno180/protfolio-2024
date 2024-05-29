@@ -11,6 +11,7 @@ export interface ProjectsSectionType {
   url: string;
   image: string;
   isReflect: boolean;
+  isSkilled?: boolean;
 }
 
 const ProjectsSection = ({
@@ -19,6 +20,7 @@ const ProjectsSection = ({
   url,
   description,
   title,
+  isSkilled
 }: ProjectsSectionType) => {
   return (
     <>
@@ -47,7 +49,7 @@ const ProjectsSection = ({
                 }`}
               >
                 <div className="z-20">
-                  <TextContent title={title as string} url={url} description={description as string}  />
+                  <TextContent isSkilled={isSkilled as boolean} title={title as string} url={url} description={description as string}  />
                 </div>
               </div>
               <div className="w-full h-full grid place-content-center">

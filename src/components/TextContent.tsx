@@ -7,9 +7,15 @@ export interface TextContentType {
   title: string;
   url?: string;
   description: string;
+  isSkilled: boolean;
 }
 
-const TextContent = ({title, url, description}:TextContentType ) => {
+const TextContent = ({
+  title,
+  url,
+  description,
+  isSkilled,
+}: TextContentType) => {
   return (
     <>
       <motion.div
@@ -18,7 +24,7 @@ const TextContent = ({title, url, description}:TextContentType ) => {
         transition={{ duration: 1 }}
         className="flex flex-col gap-4"
       >
-        <div className="text-green-500">- My Skills</div>
+        {isSkilled && <div className="text-green-500">- My Skills</div>}
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -42,19 +48,16 @@ const TextContent = ({title, url, description}:TextContentType ) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            {
-              url?.length as any > 1 && (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 mt-6 hover:underline flex items-center gap-4"
-                >
-                  Live Demo <IoIosArrowRoundForward size={20} />
-                </a>
-              )
-            }
-            
+            {(url?.length as any) > 1 && (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 mt-6 hover:underline flex items-center gap-4"
+              >
+                Live Demo <IoIosArrowRoundForward size={20} />
+              </a>
+            )}
           </motion.div>
         </div>
       </motion.div>
