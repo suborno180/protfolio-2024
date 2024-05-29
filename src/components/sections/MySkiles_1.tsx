@@ -102,6 +102,7 @@ const MySkills_1 = () => {
           <div className="w-full min-h-full py-14 md:py-0 bg-blue- md:p-36">
             <div className="w-full h-full grid place-content-center">
               <TextContent
+                isSkilled={true}
                 title="Why Hire Me For Your Next Project?"
                 description="The technological revolution is changing every aspect of our lives, and the fabric of society itself. It's also transforming the way we learn and what we prioritize. In this age, factual knowledge is less prized when everything you ever need to know can be accessed from your phone. There's no longer an imperative to be an expert at doing everything when specialized skills and collaboration can yield superior results."
               />
