@@ -5,12 +5,30 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaRegCircle } from "react-icons/fa";
 
-const ProjectsSection = ({ isReflect }: { isReflect: boolean }) => {
+export interface ProjectsSectionType {
+  title?: string;
+  description?: string;
+  url: string;
+  image: string;
+  isReflect: boolean;
+}
+
+const ProjectsSection = ({
+  isReflect,
+  image,
+  url,
+  description,
+  title,
+}: ProjectsSectionType) => {
   return (
     <>
       <section className="relative w-full">
         <div className="w-full z-10 absolute top-0 overflow-hidden">
-          <div className={`w-full flex ${isReflect ? 'justify-end' : 'justify-start'}`}>
+          <div
+            className={`w-full flex ${
+              isReflect ? "justify-end" : "justify-start"
+            }`}
+          >
             <motion.span
               initial={{ x: isReflect ? 150 : -150 }} // Adjust the initial x position
               whileInView={{ x: isReflect ? 60 : -60 }} // Adjust the target x position
@@ -29,7 +47,7 @@ const ProjectsSection = ({ isReflect }: { isReflect: boolean }) => {
                 }`}
               >
                 <div className="z-20">
-                  <TextContent />
+                  <TextContent title={title as string} url={url} description={description as string}  />
                 </div>
               </div>
               <div className="w-full h-full grid place-content-center">
@@ -38,10 +56,10 @@ const ProjectsSection = ({ isReflect }: { isReflect: boolean }) => {
                     initial={{ rotate: -6 }}
                     whileInView={{ rotate: 6 }}
                     transition={{ duration: 1 }} // Animation duration and repetition
-                    className="w-full h-full bg-gray-500 rounded-3xl rotate-6 overflow-hidden"
+                    className="w-full h-full bg-gray-300 rounded-3xl rotate-6 overflow-hidden"
                   >
                     <Image
-                      src="/portfolio-1-img.jpg"
+                      src={image ?? "/portfolio-1-img.jpg"}
                       alt="img"
                       layout="fill"
                       objectFit="cover"

@@ -3,7 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-const TextContent = () => {
+export interface TextContentType {
+  title: string;
+  url?: string;
+  description: string;
+}
+
+const TextContent = ({title, url, description}:TextContentType ) => {
   return (
     <>
       <motion.div
@@ -20,7 +26,7 @@ const TextContent = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className="text-4xl"
           >
-            Why Hire Me For Your Next Project?
+            {title}
           </motion.h1>
         </div>
         <div>
@@ -29,21 +35,26 @@ const TextContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            {` The technological revolution is changing every aspect of our lives, and the fabric of society itself. It's also transforming the way we learn and what we prioritize. In this age, factual knowledge is less prized when everything you ever need to know can be accessed from your phone. There's no longer an imperative to be an expert at doing everything when specialized skills and collaboration can yield superior results.`}
+            {description}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 mt-6 hover:underline flex items-center gap-4"
-            >
-              Live Demo <IoIosArrowRoundForward size={20} />
-            </a>
+            {
+              url?.length as any > 1 && (
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 mt-6 hover:underline flex items-center gap-4"
+                >
+                  Live Demo <IoIosArrowRoundForward size={20} />
+                </a>
+              )
+            }
+            
           </motion.div>
         </div>
       </motion.div>

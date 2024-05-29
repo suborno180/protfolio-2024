@@ -5,6 +5,7 @@ import ProjectsSection from "@/components/sections/ProjectsSection";
 import Header from "@/components/Header";
 import CountingSection from "@/components/sections/CountingSection";
 import Link from "next/link";
+import { All_Projects } from "@/utils/jsons/allprojectApiData";
 
 export default function Home() {
   const allExperiences = [
@@ -99,8 +100,19 @@ export default function Home() {
           logos={allExperiences}
         />
         <MySkiles_1 />
-        <ProjectsSection isReflect={false} />
-        <ProjectsSection isReflect={true} />
+        {All_Projects.splice(0,5).map((item, index) => (
+          <>
+            <div key={index}>
+              <ProjectsSection 
+              image={item.image}
+              url={item.url}
+              title={item.title}
+              description={item.description}
+              isReflect={index % 2 ==  0 ? true : false} 
+              />
+            </div>
+          </>
+        ))}
         <div className="w-full grid place-content-center -mt-10">
           <Link href="/protfolio" className="btn btn-warning">See More</Link>
         </div>
