@@ -150,7 +150,7 @@ const All_Projects:All_ProjectsType[] = [
         title: "Gameing Landing Page Design",
         description: "Hello friends, I'm Maruf Suborno, this is a gaming website that I created just for practice!",
         url: "https://suborno180.github.io/gameing",
-        image: "/images/football-match.PNG"
+        image: "https://suborno180.github.io/gameing/assest/img/ytryty.PNG"
     },
 ]
 
