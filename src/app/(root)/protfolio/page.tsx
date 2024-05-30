@@ -145,6 +145,13 @@ const All_Projects:All_ProjectsType[] = [
         url: "https://www.crackstreamsports.live/",
         image: "/images/football-match.PNG"
     },
+    {
+        id: 20,
+        title: "Gameing Landing Page Design",
+        description: "Hello friends, I'm Maruf Suborno, this is a gaming website that I created just for practice!",
+        url: "https://suborno180.github.io/gameing",
+        image: "/images/football-match.PNG"
+    },
 ]
 
 
