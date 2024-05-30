@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import HeroSection from "@/components/sections/HeroSection";
 import MySkiles_1 from "@/components/sections/MySkiles_1";
@@ -11,7 +12,7 @@ export default function Home() {
   const allExperiences = [
     {
       src: "/experiences/html5-logo.png",
-      alt: "HTML5"
+      alt: "HTML5",
     },
     {
       src: "/experiences/css-logo.png",
@@ -89,32 +90,40 @@ export default function Home() {
       src: "/experiences/Wordpress_Blue_logo.png",
       alt: "Wordpress",
     },
-  ]
+  ];
   return (
     <>
       <main>
-       
         <HeroSection />
-        <ExperienceSection
-          title="My Experiences"
-          logos={allExperiences}
-        />
+        <ExperienceSection title="My Experiences" logos={allExperiences} />
         <MySkiles_1 />
-        {All_Projects.splice(0,5).map((item, index) => (
+        <div></div>
+        <div className="w-full bg-black my-8">
+          <Link href="">
+            <img
+              src="/images/github-suborno180.PNG"
+              className="mx-auto"
+              alt=""
+            />
+          </Link>
+        </div>
+        {All_Projects.splice(0, 5).map((item, index) => (
           <>
             <div key={index}>
-              <ProjectsSection 
-              image={item.image}
-              url={item.url}
-              title={item.title}
-              description={item.description}
-              isReflect={index % 2 ==  0 ? true : false} 
+              <ProjectsSection
+                image={item.image}
+                url={item.url}
+                title={item.title}
+                description={item.description}
+                isReflect={index % 2 == 0 ? true : false}
               />
             </div>
           </>
         ))}
         <div className="w-full grid place-content-center -mt-10">
-          <Link href="/protfolio" className="btn btn-warning">See More</Link>
+          <Link href="/protfolio" className="btn btn-warning">
+            See More
+          </Link>
         </div>
         <CountingSection />
       </main>
